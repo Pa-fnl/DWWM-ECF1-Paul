@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Festoche</title>
+    <link rel="icon" href="image/favicon.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="banniere">
+        <img src="image/festival-techno-la-teste-banniere.jpg" alt="" />
+      </div>
+      <section class="featured-artist">
+        <div class="nav-equalizer-container">
+          <!-- Equalizer au-dessus -->
+          <div class="equalizer">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+
+          <!-- Nav Bar -->
+          <nav class="nav-bar">
+            <div class="nav-left">
+              <img
+                src="image/favicon.png"
+                alt="Logo du festival"
+                class="logo"
+              />
+              <span class="festival-dates">15, 16, 17 juin 2025</span>
+            </div>
+
+            <div class="nav-center">
+              <button id="play-button" class="play-btn">▶ Play</button>
+            </div>
+
+            <div class="nav-right">
+              <a href="#concert" class="nav-link">Concert</a>
+              <a href="#services" class="nav-link">Services</a>
+            </div>
+          </nav>
+
+          <!-- Equalizer en-dessous -->
+          <div class="reverse-equalizer">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <audio id="audio" loop>
+          <source src="song/loop.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+      <!-- <div class="header__logo">
+        <img src="image/festival-techno-la-teste-banniere.jpg" alt="" />
+      </div>
+
+      <div class="nav-bar">
+        <div class="nav-bar__item">Concert</div>
+
+        <div class="nav-bar__item">
+          <img src="image/favicon.png" alt="logo festival" />
+        </div>
+
+        <div class="nav-bar__item nav-bar__item--blue-button">Services</div>
+      </div>
+
+      <div class="nav-bar-mobile">
+        <div>
+          <a class="nav-bar-mobile__button">
+            <img
+              src="img/icons/bar-chart-fill.svg"
+              alt=""
+              class="nav-bar-mobile__icon"
+            />
+          </a>
+        </div>
+        <div
+          class="nav-bar-mobile__container nav-bar-mobile__container--hidden"
+        >
+          <div class="nav-bar-mobile__item">Lien 1</div>
+
+          <div class="nav-bar-mobile__item">Lien 2</div>
+
+          <div class="nav-bar-mobile__item">Contact</div>
+        </div>
+      </div> -->
+    </header>
+    <br />
+    <section class="home-page">
+      <div class="poster-container">
+        <img src="image/affiche.png" alt="affiche du festival" />
+      </div>
+      <br />
+      <div class="apercu">
+        <h3>Découvrez un avant gout !</h3>
+      </div>
+      <div class="box"><div class="layer-blue"></div></div>
+
+      <div class="container">
+        <!-- Égaliseur supérieur -->
+        <div class="equalizer">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <!-- Égaliseur inférieur -->
+        <div class="reverse-equalizer">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </section>
+    <script src="script/script.js"></script>
+  </body>
+</html>

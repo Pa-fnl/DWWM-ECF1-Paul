@@ -1,0 +1,123 @@
+/* Conteneur global */
+.nav-equalizer-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Equalizer */
+.equalizer,
+.reverse-equalizer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 40px; /* Ajustez la hauteur pour une meilleure proportion */
+  gap: 5px;
+  width: 100%; /* Égale à la largeur de la nav-bar */
+}
+
+.equalizer .bar,
+.reverse-equalizer .bar {
+  width: 5px; /* Largeur des barres */
+  background-color: #15acff;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+.reverse-equalizer .bar {
+  background-color: #eb15ff;
+}
+
+/* Animation pour l'equalizer */
+@keyframes bounce {
+  0%,
+  100% {
+    height: 20%;
+  }
+  50% {
+    height: 80%;
+  }
+}
+
+/* Nav Bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Prend toute la largeur */
+  max-width: 1200px; /* Fixe une largeur maximale */
+  margin: 0 auto; /* Centre la nav bar */
+  padding: 10px 20px;
+  background-color: #2e2a39;
+  color: #ffffff;
+  height: 60px;
+  font-family: "Lato", sans-serif;
+  z-index: 1; /* Place la nav-bar au-dessus des equalizers */
+}
+
+/* Logo et dates */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.festival-dates {
+  font-size: 14px;
+  color: #fd55b7;
+}
+
+/* Bouton Play */
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-btn {
+  background-color: #fd55b7;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.play-btn:hover {
+  background-color: #e4489d;
+}
+
+/* Liens nav */
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #83feff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-right {
+    margin-top: 10px;
+  }
+}
